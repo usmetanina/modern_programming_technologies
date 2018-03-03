@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Ninject.Modules;
+using System.IO;
 
 namespace ioc
 {
@@ -12,34 +13,8 @@ namespace ioc
     {
         public override void Load()
         {
-            Bind<ILogger>().To<ConsoleLogger>().InSingletonScope();
+            Bind<ILogger>().To<DateLogger>().InSingletonScope();
             Bind<IDatabase>().To<Database>().InTransientScope();
-        }
-    }
-
-    public interface ILogger
-    {
-        void Log(string message);
-    }
-
-    class ConsoleLogger: ILogger
-    {
-        public void Log(string message)
-        {
-            Console.WriteLine(message);
-        }
-    }
-
-    public interface IDatabase
-    {
-        void Execute(string query, IKernel kernel);
-    }
-
-    class Database : IDatabase
-    {
-        public void Execute(string query, IKernel kernel)
-        {
-            kernel.Get<ILogger>().Log(query);
         }
     }
 
