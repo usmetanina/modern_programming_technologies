@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ioc", "ioc\ioc.csproj", "{5B7E46E7-143D-4DBB-AD00-2111D404084C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{2867B1EB-7951-47D2-AD77-36DB827B422F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B7E46E7-143D-4DBB-AD00-2111D404084C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B7E46E7-143D-4DBB-AD00-2111D404084C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B7E46E7-143D-4DBB-AD00-2111D404084C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B7E46E7-143D-4DBB-AD00-2111D404084C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2867B1EB-7951-47D2-AD77-36DB827B422F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2867B1EB-7951-47D2-AD77-36DB827B422F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2867B1EB-7951-47D2-AD77-36DB827B422F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2867B1EB-7951-47D2-AD77-36DB827B422F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
